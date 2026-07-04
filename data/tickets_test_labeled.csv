@@ -1,0 +1,36 @@
+ticket_id,customer_message,true_category,true_priority,true_product,true_refund_request
+E001,Double billed for Enterprise in January. Email me at billing@corp.com.,billing,high,Enterprise,false
+E002,App crashes when opening Settings on Android 14.,technical_bug,medium,Mobile App,false
+E003,Need password reset—link says token invalid.,account_access,high,Acme Portal,false
+E004,Refund my last three months. Service unusable.,refund,high,Pro,true
+E005,Order ORD-992 never arrived; tracking frozen.,shipping,high,Hardware Kit,false
+E006,Add role-based permissions for editors.,feature_request,low,Acme Portal,false
+E007,Why was I upgraded to Pro without consent?,billing,high,Pro,false
+E008,Webhook signatures failing validation after update.,technical_bug,high,API,false
+E009,Locked out of admin panel during demo—urgent!,account_access,urgent,Acme Portal,false
+E010,Package arrived damaged; need replacement.,shipping,medium,Hardware Kit,false
+E011,Please refund duplicate $79 charge from Tuesday.,refund,high,Starter Plan,true
+E012,CSV export missing columns for custom fields.,technical_bug,medium,Export Tool,false
+E013,Can you add Slack notifications for alerts?,feature_request,low,Integrations,false
+E014,Invoice shows wrong tax rate for Texas.,billing,medium,Starter Plan,false
+E015,Session expires every 5 minutes—very frustrating.,technical_bug,high,Acme Portal,false
+E016,How do I invite teammates to my workspace?,account_access,low,Acme Portal,false
+E017,Still waiting on refund approved two weeks ago.,refund,high,Enterprise,true
+E018,Change delivery to PO Box 445—will that work?,shipping,low,Hardware Kit,false
+E019,Love the product; suggest better search filters.,feature_request,low,Acme Suite,false
+E020,Random question about your company history.,other,low,,false
+E021,Payment method update page throws 403 error.,technical_bug,medium,Billing Portal,false
+E022,Need MFA backup codes resent securely.,account_access,medium,Acme Portal,false
+E023,Chargeback filed if no refund in 48 hours.,refund,urgent,Pro,true
+E024,Shipment returned to sender—please reship.,shipping,high,Hardware Kit,false
+E025,Dashboard widgets do not refresh automatically.,technical_bug,medium,Dashboard,false
+E026,Can I downgrade from Enterprise to Pro mid-cycle?,billing,medium,Enterprise,false
+E027,Request GDPR data export for my account.,account_access,medium,Acme Portal,false
+E028,Add dark theme to mobile app please.,feature_request,low,Mobile App,false
+E029,Sync stuck at 99% for hours.,technical_bug,high,Sync Service,false
+E030,Promo code WELCOME10 not applying at checkout.,billing,medium,Starter Plan,false
+E031,Refund only the unused portion of annual plan.,refund,medium,Pro,true
+E032,Tracking number invalid on carrier site.,shipping,medium,Hardware Kit,false
+E033,Report builder times out on large datasets.,technical_bug,high,Reporting,false
+E034,Deactivate user account for former employee.,account_access,medium,Acme Portal,false
+E035,Thank you—issue resolved!,other,low,,false
