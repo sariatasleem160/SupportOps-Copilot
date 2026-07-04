@@ -1,0 +1,12 @@
+{
+  "tickets_evaluated": 0,
+  "category_macro_f1": 0.0,
+  "priority_accuracy": 0.0,
+  "key_field_accuracy": 0.0,
+  "targets_met": {
+    "category_macro_f1_gte_0_75": false,
+    "priority_accuracy_gte_0_75": false,
+    "key_field_accuracy_gte_0_80": false
+  },
+  "note": "Run python evaluate.py after setting OPENAI_API_KEY to populate metrics."
+}
