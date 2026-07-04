@@ -3,10 +3,16 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+import anthropic
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).resolve().parent / ".env")
+load_dotenv(Path(__file__).resolve().parent / "config.env", override=True)
 
 from dashboard import plot_category_distribution, summarize_tickets
 from draft_reply import load_support_policy
@@ -26,6 +32,13 @@ st.set_page_config(
 
 st.title("SupportOps Copilot")
 st.caption("Messy ticket → structured analysis → safe draft → dashboard → metrics")
+
+api_key = os.getenv("ANTHROPIC_API_KEY", "").strip()
+if not api_key or api_key in {"test-key", "sk-ant-your-key-here"}:
+    st.warning(
+        "Set a valid `ANTHROPIC_API_KEY` in a `.env` file, then restart Streamlit. "
+        "Get a key at https://console.anthropic.com/settings/keys"
+    )
 
 if "processed" not in st.session_state:
     st.session_state.processed = []
@@ -47,10 +60,27 @@ with tab_analyze:
     )
 
     if st.button("Analyze", type="primary", disabled=not message.strip()):
-        with st.spinner("Running classify → extract → draft..."):
-            analysis, log_payload = process_ticket(message.strip(), ticket_id=ticket_id)
-            st.session_state.processed.append(analysis.model_dump(mode="json"))
-            st.session_state.logs.append(log_payload)
+        try:
+            with st.spinner("Running classify → extract → draft..."):
+                analysis, log_payload = process_ticket(message.strip(), ticket_id=ticket_id)
+                st.session_state.processed.append(analysis.model_dump(mode="json"))
+                st.session_state.logs.append(log_payload)
+        except anthropic.AuthenticationError:
+            st.error(
+                "Invalid Anthropic API key. Update `.env` with a real key from "
+                "https://console.anthropic.com/settings/keys, restart START.bat, "
+                "and try again."
+            )
+            st.stop()
+        except anthropic.RateLimitError:
+            st.error(
+                "Anthropic rate limit or quota exceeded. Check billing at "
+                "https://console.anthropic.com/settings/billing — then try again."
+            )
+            st.stop()
+        except anthropic.APIStatusError as exc:
+            st.error(f"Anthropic API error: {exc.message}")
+            st.stop()
 
         col1, col2 = st.columns(2)
         with col1:
