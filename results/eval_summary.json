@@ -8,5 +8,5 @@
     "priority_accuracy_gte_0_75": false,
     "key_field_accuracy_gte_0_80": false
   },
-  "note": "Run python evaluate.py after setting OPENAI_API_KEY to populate metrics."
+  "note": "Run python evaluate.py after setting ANTHROPIC_API_KEY in config.env to populate metrics."
 }
