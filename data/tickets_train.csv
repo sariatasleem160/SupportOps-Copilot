@@ -1,0 +1,36 @@
+ticket_id,customer_message,true_category,true_priority,true_product,true_refund_request
+T001,I was charged twice for my Pro plan this month on card ending 4242. Please fix this immediately!,billing,high,Pro,false
+T002,The export button crashes every time I click it on Chrome 122.,technical_bug,medium,Export Tool,false
+T003,Love the new dashboard! Would be great to have dark mode.,feature_request,low,Dashboard,false
+T004,I forgot my password and the reset link expired. Need access today for a client demo.,account_access,high,Acme Portal,false
+T005,I want a full refund for my annual subscription. The product does not work for our team.,refund,high,Acme Suite,true
+T006,My package has been stuck in transit for two weeks. Order #8821.,shipping,medium,Hardware Kit,false
+T007,Can you explain why my invoice jumped from $49 to $79?,billing,medium,Starter Plan,false
+T008,Getting error 500 when saving reports since yesterday.,technical_bug,high,Reporting,false
+T009,Please add SSO support for Okta.,feature_request,low,Acme Portal,false
+T010,I cannot log in after enabling 2FA. Lost my authenticator app.,account_access,urgent,Acme Portal,false
+T011,Charge me once not three times!!! This is fraud.,billing,urgent,Pro,true
+T012,Tracking says delivered but nothing arrived. Address 742 Evergreen Terrace.,shipping,high,Hardware Kit,false
+T013,How do I change my billing cycle from monthly to annual?,billing,low,Starter Plan,false
+T014,Mobile app freezes on splash screen on iOS 17.,technical_bug,medium,Mobile App,false
+T015,Cancel my account and refund last payment please.,refund,high,Starter Plan,true
+T016,Thanks for the quick help last week! Just saying hi.,other,low,,false
+T017,API webhooks stopped firing after your maintenance window.,technical_bug,high,API,false
+T018,Need to update shipping address before my order ships.,shipping,medium,Hardware Kit,false
+T019,My manager needs read-only access to our workspace.,account_access,medium,Acme Portal,false
+T020,Would love bulk CSV import for user provisioning.,feature_request,low,Acme Portal,false
+T021,Unauthorized charge of $199 on my card.,billing,urgent,Enterprise,true
+T022,Login page shows blank white screen in Firefox.,technical_bug,medium,Acme Portal,false
+T023,Where is my refund from ticket R-4412? Still waiting 10 days.,refund,high,Pro,true
+T024,Positive feedback: onboarding wizard is excellent!,other,low,Onboarding,false
+T025,Data sync fails with timeout after 30 seconds.,technical_bug,high,Sync Service,false
+T026,Please remove my email john.doe@example.com from marketing lists.,account_access,low,Acme Portal,false
+T027,International shipment delayed at customs—need ETA.,shipping,medium,Hardware Kit,false
+T028,Can we get audit logs exported to S3?,feature_request,medium,Enterprise,false
+T029,Invoice PDF will not download; spinning forever.,technical_bug,medium,Billing Portal,false
+T030,I was locked out after 5 wrong passwords. When can I retry?,account_access,medium,Acme Portal,false
+T031,Request partial refund for unused seats on Enterprise plan.,refund,high,Enterprise,true
+T032,Wrong item shipped—received Basic instead of Pro kit.,shipping,high,Hardware Kit,false
+T033,General question: do you offer nonprofit pricing?,billing,low,,false
+T034,Integrations page returns 404 since redesign.,technical_bug,medium,Integrations,false
+T035,Escalating to legal if refund not processed by Friday.,refund,urgent,Pro,true
